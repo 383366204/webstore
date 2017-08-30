@@ -1,0 +1,41 @@
+/*导航*/
+nav{
+	position: absolute;
+	top: 2px;
+	left: 320px;
+}
+.category-content .category{background-color: #2B2B2B;box-shadow: 8px 0 7px -3px rgba(0,0,0,0.3) }
+.category-content .category-list li {width: 160px; height:45px;border-top: 1px solid #333;border-bottom: 1px solid #333;}
+.category-content .category-list a:hover{ text-decoration: none; color: #D2364C; }
+.category-content .category-name .ml-22{font-size:14px;}
+.category-content .category-list .bd-b{ height: 1px;  margin: -1px 10px 0 10px;}
+
+
+.category-content .b-category-name {line-height:32px;padding-top:3px ;padding-left:8px ;}
+.category-content .b-category-name span:first-child{color: #D83E54;font-size: 24px;padding-right: 8px;}
+.category-content .b-category-name span:last-child{color: #FFFFFF;}
+.category-content .b-category-name a{ color: #fff;}
+.category-content .category-info{ position:relative;height: 100%;width: 100%;overflow: hidden;}
+.category-content .hover .category-info{ border:none; text-decoration:none; background: #fff;  }
+.category-content .menu-item { position: absolute;left: 159px;height:100%; z-index: 11;width:770px;background: #fff;border: 1px solid #333;border-left: 1px solid #FFFFFF;}
+.category-content .menu-item .area-bg{ padding: 10px 0 10px 50px;}
+.category-content .menu-in{display: none;}
+.category-content .category-list li.hover .b-category-name a{ color:#4c4c4c; }
+.category-content .menu-srot{width: 100%; overflow:hidden;}
+.menu-srot .sort-side{ overflow:hidden }
+.sort-side .dl-sort{ float:left; width:100%; }
+.sort-side dt { margin-top: 5px; font-size: 14px; font-weight: bold; color: #db3e54; text-align: left;}
+.sort-side dd { float:left; margin: 2px 6px 4px 0;}
+.sort-side dd a{ float:left; width: auto; letter-spacing:0.5px;  line-height: 14px;  color:#888; white-space:nowrap; overflow: hidden; text-overflow:ellipsis; padding: 3px 10px; border:1px solid #e6e6e6; }
+.sort-side dd a span.red{ color:#DB3E54; }
+.menu-srot .brand-side{ float: left; position: relative;margin-left: -10px; padding-top: 10px; }
+.brand-side {margin-top: 50px; border-top: 1px solid #eae9e9;}
+.brand-side .dl-sort{overflow: hidden; height: 70px;}
+.brand-side dt { position: absolute; top: -22px; padding:0 10px; font-size: 14px; font-weight: bold;}
+.brand-side dd { float: left; padding: 5px 0; }
+.brand-side dd a{ display: block; padding: 0 10px; line-height: 1; border-right: 1px solid #bcbcbc; color: #888; }
+.brand-side dd a.more{color: #b6b6b6;}
+
+
+.category-content .menu-item.top{top:0px;}
+.sort-side .dl-sort{ float:left; width:50%; }

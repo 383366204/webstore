@@ -1,0 +1,58 @@
+/*顶部导航*/
+.top-navi{
+	padding-bottom: 4px;
+}
+.top-navi div:last-child ul{
+	float: right;
+}
+.top-navi ul li{
+	float: left;
+	padding: 0 4px;
+}
+.search div:first-child a img{
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+.top-navi a:hover{
+	text-decoration: none;
+}
+/*搜索框*/
+.search-bar{height:41px;}
+.search-bar form{border:2px solid #F03726; max-width:670px;margin-top: 1%;}
+.search-bar input{padding-left:8px;height:32px;outline:none; font-size:12px;}
+#search-button {width:16%;height:32px;border:none;float:right;background: #F03740 none repeat scroll 0% 0%;
+color: #F5F5F2;font-size: 14px;cursor:pointer;border-radius:0px 0px;}
+/*引導欄*/
+.under-line{
+	border-bottom: 2px solid #D2364C;
+}
+
+.nav-line {
+	font-size: 16px;
+	height: 40px;
+	margin-top: 10px;
+	line-height: 40px;
+}
+.nav-line div:first-child{
+	float:left;	
+	background-color: #D2364C;
+	color: #FFFFFF;
+	
+}
+.nav-line ul{
+	float: left;
+	
+}
+.nav-line ul li{
+	display: block;
+	float: left;
+	padding: 0 15px;
+	font-weight: bold;
+}
+.nav-line ul li a:hover{
+	text-decoration: none;
+}
+#myCarousel{
+	position: relative;
+}
