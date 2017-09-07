@@ -1,0 +1,109 @@
+.today>div>div{
+	height: 140px;
+	position: relative;
+	border: 1px solid #EEEEEE;
+}
+
+.today>div>div:first-child{	
+	background-image: url(../img/clockbg.png);
+	line-height: 140px;
+	color:#FFFFFF;
+	font-size: 28px;
+	
+}
+.today>div>div>h3{
+	position: absolute;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	top: 34px;
+}
+
+.today>div>div>h4{
+	position: absolute;
+	top:50px;
+	font-size: 14px;
+}
+.today>div>div>img{
+	position: absolute;
+	top: 6px;
+	right: 18px;
+	width: 120px;
+}
+@keyframes imgMove{
+	from{right:18px;}
+	to{right: 30px;}
+}
+.today>div>div>img:hover{
+	animation: imgMove 0.3s forwards;
+	cursor: pointer;
+}
+
+/*标题*/
+.shopTitle{margin-top: 20px;border-bottom: 2px solid #000000;padding-bottom: 5px;}
+.shopTitle h4{font-size: 22px;display: inline-block;font-weight: bold;}
+.shopTitle h3{font-size: 14px;display: inline-block;color:#999;margin-left: 4px;}
+.shopTitle span{display: inline-block;float: right;}
+.shopTitle span :not(:last-child){
+	margin-right: 8px;
+}
+/*活动*/
+.activity {min-height:180px ;}
+.activity>div:last-child{margin-top: 6px;}
+.activity>div:last-child>div.col-md-3{padding: 2px;}
+.activity .info{position: absolute;bottom: 10px;left: 53px;background-color: #EEEEEE;}
+.activity .info:hover{background-color: #BBBBBB;}
+.activity .info>h3{font-size: 14px;padding: 6px 50px;}
+.activity .info>h3>a:hover{color: black;}
+.activity .icon-sale{position: absolute;top: 2px; width: 0;height: 0;border-top: 100px solid #0087e5;border-right: 100px solid transparent;}
+.activity .icon-sale.one{border-top-color: #9b0d5f;}
+.activity .icon-sale.two{border-top-color: #b48c66;}
+.activity .icon-sale.three{border-top-color: #7fb113;}
+.activity .icon-title{position: absolute;top:18px;left: 18px;color: #FFFFFF;}
+
+
+/*floor*/
+.floorMain .word>a{
+	padding-left: 0;
+	padding-right: 0 ;
+	padding-top: 9px;
+	padding-bottom: 7px;
+}
+.floorMain .title{
+	font-weight: bold;
+}
+.floorMain .sub-title{
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+.floorMain>div:first-child{
+	border-left: 1px solid rgba(200,200,200,0.3);
+}
+.floorMain>div{
+	border-right: 1px solid rgba(200,200,200,0.3);
+	border-bottom: 1px solid rgba(200,200,200,0.3);
+}
+.floorMain>div .price span{
+	color:#DD2E2A;
+}
+.floorMain>div:nth-child(n+2):nth-child(-n+3){
+	padding-top: 9px;
+ 	/*padding-bottom: 5px;*/
+}
+
+.floorMain>div:nth-child(n+2):nth-child(-n+3) .price{
+ 	position: absolute;
+ 	left: 230px;
+ 	top:40px;
+}
+@keyframes floorImg{
+	from{margin-right: 0;}
+	to{margin-right: 20px;}
+}
+@keyframes floorImg{
+	from{transform: scale(1);}
+	to{transform: scale(0.9);}
+}
+.floorMain>div:nth-child(n+2) img:hover{
+	animation: floorImg 0.2s forwards;
+}

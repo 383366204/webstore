@@ -1,0 +1,29 @@
+.footerline{
+	border-bottom: 2px solid #D2364C;
+	height: 2px;
+	margin-top: 30px;
+}
+footer{
+	width: 100%;
+}
+footer ul{
+	margin-top: 10px;
+}
+footer ul>li:first-child{
+	font-weight: bold;
+	padding: 2px 0;
+}
+footer ul>li:not(:first-child)>a{
+	color:#666666;
+}
+footer>div img{
+	width: 80px;
+}
+footer>div:last-child>div{
+	margin-top: 4px;
+	padding: 8px 0;
+	border-top: 1px solid #DDDDDD;
+}
+footer>div:last-child>div>a{
+	padding: 0 10px;
+}

@@ -1,0 +1,27 @@
+/* 个人信息 */
+.user-infoPic{position: relative;border-bottom:1px solid #E4EAEE;padding: 40px 0 40px 0px;}
+.filePic{text-align: center;}
+.filePic>img{
+	width: 50%;
+}
+.inputPic{ cursor:pointer;height:100%;position: absolute;width: 50%;left: 30%;opacity: 0;}
+.info-m{
+	margin-top: 20px;
+}
+.info-m div a{
+	color:#666;
+}
+.info-m>div{
+	padding: 4px 0;
+}
+.info-main{
+	padding: 20px 0 8px 0;
+}
+/*修改信息*/
+.birth-select,.birth-select2 {float:left; margin-right:5px; vertical-align:middle;}
+.birth-select select{float:left; width:60px;background: none;border:none ;padding-top:9px ;}
+.birth-select2 select{float:left; width:40px;background: none;border: none;padding-top:9px ;}
+
+
+.user-info{width:100%; max-width:900px;overflow:hidden;}
+.user-safety{width:100%; max-width:900px;overflow:hidden;}
