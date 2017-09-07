@@ -1,11 +1,15 @@
+#myCarousel{
+	position: relative;
+}
 /*导航*/
 nav{
 	position: absolute;
-	top: 2px;
-	left: 320px;
+	top: 0px;
+	left: 382px;
 }
+/*.category-content{position: relative;}*/
 .category-content .category{background-color: #2B2B2B;box-shadow: 8px 0 7px -3px rgba(0,0,0,0.3) }
-.category-content .category-list li {width: 160px; height:45px;border-top: 1px solid #333;border-bottom: 1px solid #333;}
+.category-content .category-list li {width: 195px; height:45px;border-top: 1px solid #333;border-bottom: 1px solid #333;}
 .category-content .category-list a:hover{ text-decoration: none; color: #D2364C; }
 .category-content .category-name .ml-22{font-size:14px;}
 .category-content .category-list .bd-b{ height: 1px;  margin: -1px 10px 0 10px;}
@@ -17,7 +21,7 @@ nav{
 .category-content .b-category-name a{ color: #fff;}
 .category-content .category-info{ position:relative;height: 100%;width: 100%;overflow: hidden;}
 .category-content .hover .category-info{ border:none; text-decoration:none; background: #fff;  }
-.category-content .menu-item { position: absolute;left: 159px;height:100%; z-index: 11;width:770px;background: #fff;border: 1px solid #333;border-left: 1px solid #FFFFFF;}
+.category-content .menu-item { position: absolute;left: 195px;height:100%; z-index: 11;width:770px;background: #fff;border: 1px solid #333;border-left: 1px solid #FFFFFF;}
 .category-content .menu-item .area-bg{ padding: 10px 0 10px 50px;}
 .category-content .menu-in{display: none;}
 .category-content .category-list li.hover .b-category-name a{ color:#4c4c4c; }

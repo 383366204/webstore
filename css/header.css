@@ -20,13 +20,16 @@
 /*搜索框*/
 .search-bar{height:41px;}
 .search-bar form{border:2px solid #F03726; max-width:670px;margin-top: 1%;}
-.search-bar input{padding-left:8px;height:32px;outline:none; font-size:12px;}
+.search-bar input{width: 84%; padding-left:8px;height:32px;outline:none; font-size:12px;}
 #search-button {width:16%;height:32px;border:none;float:right;background: #F03740 none repeat scroll 0% 0%;
 color: #F5F5F2;font-size: 14px;cursor:pointer;border-radius:0px 0px;}
-/*引導欄*/
-.under-line{
+
+.headerline{
 	border-bottom: 2px solid #D2364C;
+	height: 2px;
 }
+
+/*引導欄*/
 
 .nav-line {
 	font-size: 16px;
