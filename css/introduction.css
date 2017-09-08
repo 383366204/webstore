@@ -38,20 +38,35 @@
 .express{
 	margin-top: 18px;
 }
-.count>div{
-	margin-top: 16px;
-	padding: 6px 0px;
-	border-right:1px solid #CCCCCC;
-	border-top:1px solid #CCCCCC;
-	border-bottom: 1px solid #CCCCCC;
+.express div label{
+	height: 100%;
+	line-height: 34px;
+	width: 10%;
 }
-.count>div:first-child{
-	border-left: 1px solid #CCCCCC;
+.express select{
+	width: 30%;
+	float: left;
 }
-.count>div>span{
-	color:#E4393C;
-	padding-left: 10px;
-	font-weight: bold;
+.express select:not(:first-child){
+	margin-left: 3%;
+}
+.express>div>div:nth-child(2){
+	padding-left: 0;
+}
+.express>div>div{
+	height: 100%;
+	line-height: 34px;
+}
+.count{
+	padding-top: 10px;
+}
+.count button:focus{
+	outline: none;
+	background-color: #FFFFFF;
+	border: 1px solid #CCC;
+}
+.count button span{
+	color:#c00;
 }
 .taste{
 	
