@@ -23,5 +23,27 @@
 .birth-select2 select{float:left; width:40px;background: none;border: none;padding-top:9px ;}
 
 
-.user-info{width:100%; max-width:900px;overflow:hidden;}
+.user-info{width:100%; max-width:900px;overflow:hidden;padding-bottom: 2px;}
 .user-safety{width:100%; max-width:900px;overflow:hidden;}
+
+/*安全设置*/
+.check a{text-decoration: none;}
+.check ul li:nth-child(1) div span{color:#E4393C;}
+.check ul li:nth-child(2) div span{color:#888888;}
+.check ul li:nth-child(3) div span{color:#609CE3;}
+.check ul li:nth-child(4) div span{color:#F69954;}
+.check ul li:nth-child(5) div span{color:#16C2C2;}
+.check ul li:nth-child(6) div span{color:#B6D700;}
+.m-left h4{font-weight: bold;font-size: 16px;}
+
+.user-safety .check .fore1 {width:80px;font-size: 14px; font-weight:bold; line-height:21px;padding-top:8px ;}
+
+.user-safety .check .fore3 {text-align:center;font-size: 12px; float:right; line-height:21px;}
+
+.check ul li span.iconfont{font-size: 30px;}
+.check ul li {padding: 14px 0;}
+.safe-modify{margin-top: 10px;background-color: #3bb4f2; color: #FFFFFF;text-align: center;padding: 2px 0;}
+
+/*地址*/
+.address>li{position: relative; border:1px solid #EEE;}
+.address .default-address{position: absolute;right: 0px;background-color: #ee3495;color:#FFF;border-radius: 4px;padding: 1px 6px;cursor: pointer;}

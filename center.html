@@ -95,13 +95,13 @@
 								<li>
 									个人资料
 								</li>
-								<li class="active">
+								<li>
 									<a href="#center-info" data-toggle="tab">个人信息</a>
 								</li>
 								<li>
 									<a href="#center-safe" data-toggle="tab">安全设置</a>
 								</li>
-								<li>
+								<li class="active">
 									<a href="#center-address" data-toggle="tab">收货地址</a>
 								</li>
 							</ul>
@@ -161,7 +161,7 @@
 				</aside>
 				<div class="col-md-10">
 					<div id="centerTabContent" class="tab-content">
-						<div class="tab-pane fade in active" id="center-info">
+						<div class="tab-pane fade" id="center-info">
 							<div class="user-info">
 								<!--标题 -->
 								<div class="center-title">
@@ -227,7 +227,7 @@
 										<div class="form-group">
 											<label for="user-birth" class="col-md-2 control-label">生日</label>
 											<div class="col-md-8">
-												<input type="date" class="form-control" id="user-birth"/>
+												<input type="date" class="form-control" id="user-birth" />
 											</div>
 
 										</div>
@@ -255,10 +255,267 @@
 							</div>
 						</div>
 						<div class="tab-pane fade" id="center-safe">
-							2
+							<div class="user-info">
+								<!--标题 -->
+								<div class="center-title">
+									<div><b>安全设置</b> / <small>Safety</small></div>
+								</div>
+
+								<!--头像 -->
+								<div class="col-md-12 user-infoPic">
+									<div class="filePic col-md-3">
+										<input type="file" class="inputPic" allowexts="gif,jpeg,jpg,png,bmp" accept="image/*">
+										<img class="img-circle" src="img/getAvatar.do.jpg" alt="请上传头像" />
+										<h5>点击上传头像</h5>
+									</div>
+
+									<div class="info-m col-md-9">
+										<div><b>用户名：<i>孙先生</i></b></div>
+										<div>
+											<span class="rank r2">
+							           	 		<a href="#">铜牌会员</a>
+						          	 		</span>
+										</div>
+										<div>
+											<a href="safety.html">
+												账户安全
+												<span>60分</span><span class="iconfont icon-warning" style="color: #CC3333;"></span>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<!--设置信息 -->
+								<div class="col-md-12">
+									<div class="check">
+										<ul class="col-md-12">
+											<li class="col-md-12">
+												<div class="col-md-1">
+													<span class="iconfont icon-lock"></span>
+												</div>
+												<div class="m-left col-md-8">
+													<h4>登录密码</h4>
+													<div class="fore2"><small>为保证您购物安全，建议您定期更改密码以保护账户安全。</small></div>
+												</div>
+												<div class="fore3 col-md-2">
+													<a href="password.html">
+														<div class="safe-modify">修改</div>
+													</a>
+												</div>
+											</li>
+											<li class="col-md-12">
+												<div class="col-md-1">
+													<span class="iconfont icon-card"></span>
+												</div>
+												<div class="m-left col-md-8">
+													<h4>支付密码</h4>
+													<div class="fore2"><small>启用支付密码功能，为您资产账户安全加把锁。</small></div>
+												</div>
+												<div class="fore3 col-md-2">
+													<a href="setpay.html">
+														<div class="safe-modify">立即启用</div>
+													</a>
+												</div>
+											</li>
+											<li class="col-md-12">
+												<div class="col-md-1">
+													<span class="iconfont icon-phone"></span>
+												</div>
+												<div class="m-left col-md-8">
+													<h4>手机验证</h4>
+													<div class="fore2"><small>您验证的手机：186XXXXXXXX 若已丢失或停用，请立即更换</small></div>
+												</div>
+												<div class="fore3 col-md-2">
+													<a href="bindphone.html">
+														<div class="safe-modify">换绑</div>
+													</a>
+												</div>
+											</li>
+											<li class="col-md-12">
+												<div class="col-md-1">
+													<span class="iconfont icon-email"></span>
+												</div>
+												<div class="m-left col-md-8">
+													<h4>邮箱验证</h4>
+													<div class="fore2"><small>您验证的邮箱：5831XXX@qq.com 可用于快速找回登录密码</small></div>
+												</div>
+												<div class="fore3 col-md-2">
+													<a href="email.html">
+														<div class="safe-modify">换绑</div>
+													</a>
+												</div>
+											</li>
+											<li class="col-md-12">
+												<div class="col-md-1">
+													<span class="iconfont icon-Id"></span>
+												</div>
+												<div class="m-left col-md-8">
+													<h4>实名认证</h4>
+													<div class="fore2"><small>用于提升账号的安全性和信任级别，认证后不能修改认证信息。</small></div>
+												</div>
+												<div class="fore3 col-md-2">
+													<a href="idcard.html">
+														<div class="safe-modify">认证</div>
+													</a>
+												</div>
+											</li>
+											<li class="col-md-12">
+												<div class="col-md-1">
+													<span class="iconfont icon-shield"></span>
+												</div>
+												<div class="m-left col-md-8">
+													<h4>安全问题</h4>
+													<div class="fore2"><small>保护账户安全，验证您身份的工具之一。</small></div>
+												</div>
+												<div class="fore3 col-md-2">
+													<a href="question.html">
+														<div class="safe-modify">认证</div>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
 						</div>
-						<div class="tab-pane fade" id="center-address">
-							3
+						<div class="tab-pane fade in active" id="center-address">
+							<div class="user-info">
+								<!--标题 -->
+								<div class="center-title">
+									<div><b>收货地址</b> / <small>Address&nbsp;list</small></div>
+								</div>
+								<ul class="address col-md-12">
+									<li class="col-md-4">
+										<div class="default-address">默认地址<span class="iconfont icon-pin"></span></div>
+										<div>
+											<span class="iconfont icon-account"></span>孙先生
+											<span class="iconfont icon-phone"></span>18928651029
+										</div>
+										<div class="new-mu_l2a new-p-re">
+											<p class="text-center">
+												<span class="iconfont icon-map"></span>
+												<span class="title">地址：</span>
+												<span class="province">湖北</span>省
+												<span class="city">武汉</span>市
+												<span class="dist">洪山</span>区
+												<span class="street">雄楚大道666号(中南财经政法大学)</span>
+											</p>
+										</div>
+										<div class="new-addr-btn">
+											<a href="#"><span class="iconfont icon-edit"></span>编辑</a>
+											<span class="new-addr-bar">|</span>
+											<a href="#"><span class="iconfont icon-delete"></span>删除</a>
+										</div>
+									</li>
+									<li class="col-md-4">
+										<div class="default-address">默认地址<span class="iconfont icon-pin"></span></div>
+										<div>
+											<span class="iconfont icon-account"></span>孙先生
+											<span class="iconfont icon-phone"></span>18928651029
+										</div>
+										<div class="new-mu_l2a new-p-re">
+											<p class="text-center">
+												<span class="iconfont icon-map"></span>
+												<span class="title">地址：</span>
+												<span class="province">湖北</span>省
+												<span class="city">武汉</span>市
+												<span class="dist">洪山</span>区
+												<span class="street">雄楚大道666号(中南财经政法大学)</span>
+											</p>
+										</div>
+										<div class="new-addr-btn">
+											<a href="#"><span class="iconfont icon-edit"></span>编辑</a>
+											<span class="new-addr-bar">|</span>
+											<a href="#"><span class="iconfont icon-delete"></span>删除</a>
+										</div>
+									</li>
+									<li class="col-md-4">
+										<div class="default-address">默认地址<span class="iconfont icon-pin"></span></div>
+										<div>
+											<span class="iconfont icon-account"></span>孙先生
+											<span class="iconfont icon-phone"></span>18928651029
+										</div>
+										<div class="new-mu_l2a new-p-re">
+											<p class="text-center">
+												<span class="iconfont icon-map"></span>
+												<span class="title">地址：</span>
+												<span class="province">湖北</span>省
+												<span class="city">武汉</span>市
+												<span class="dist">洪山</span>区
+												<span class="street">雄楚大道666号(中南财经政法大学)</span>
+											</p>
+										</div>
+										<div class="new-addr-btn">
+											<a href="#"><span class="iconfont icon-edit"></span>编辑</a>
+											<span class="new-addr-bar">|</span>
+											<a href="#"><span class="iconfont icon-delete"></span>删除</a>
+										</div>
+									</li>
+								</ul>
+								<a href="#" class="text-primary">添加新地址+</a>
+								<!--例子-->
+								<div class="col-md-12">
+									<div class="add-dress">
+										<!--标题 -->
+										<div class="center-title">
+											<div><b>新增地址</b> / <small>Add&nbsp;address</small></div>
+										</div>
+
+										<div class="col-md-12">
+											<form class="form-horizontal">
+
+												<div class="form-group">
+													<label for="user-name" class="col-md-2 control-label">收货人</label>
+													<div class="col-md-8">
+														<input class="form-control" type="text" id="user-name" placeholder="收货人">
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label for="user-phone" class="col-md-2 control-label">手机号码</label>
+													<div class="col-md-8">
+														<input class="form-control" id="user-phone" placeholder="手机号必填" type="email">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-md-2 control-label">所在地</label>
+													<div class="col-md-8">
+														<select class="form-control">
+															<option value="a">浙江省</option>
+															<option value="b" selected>湖北省</option>
+														</select>
+														<select class="form-control">
+															<option value="a">温州市</option>
+															<option value="b" selected>武汉市</option>
+														</select>
+														<select class="form-control">
+															<option value="a">瑞安区</option>
+															<option value="b" selected>洪山区</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label for="user-intro" class="col-md-2 control-label">详细地址</label>
+													<div class="col-md-8">
+														<textarea class="form-control" rows="3" id="user-intro" placeholder="输入详细地址"></textarea>
+														<p class="text-muted">100字以内写出你的详细地址...</p>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<div class="col-md-6 col-md-offset-5">
+														<button type="button" class="btn btn-primary">保存</button>
+													</div>
+												</div>
+											</form>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
