@@ -45,5 +45,52 @@
 .safe-modify{margin-top: 10px;background-color: #3bb4f2; color: #FFFFFF;text-align: center;padding: 2px 0;}
 
 /*地址*/
+.address{
+	position: relative;
+	margin-top: 20px;
+	padding-bottom: 8px;
+}
 .address>li{position: relative; border:1px solid #EEE;}
-.address .default-address{position: absolute;right: 0px;background-color: #ee3495;color:#FFF;border-radius: 4px;padding: 1px 6px;cursor: pointer;}
+.address .default-address{display:none;position: absolute;right: 0px;background-color: #ee3495;color:#FFF;border-radius: 4px;padding: 1px 6px;cursor: pointer;}
+.address li>div:not(:first-child){padding:6px 0px;}
+.address li>div:nth-child(2)>span{
+	padding: 0px 4px;
+	color:#0087E5;
+}
+.address li>div:nth-child(3)>span:first-child{
+	color:#E4393C;
+}
+.address>li:hover .default-address{
+	display: block;
+}
+.address .iconfont.icon-edit{
+	color:#16C2C2;
+}
+.address .iconfont.icon-delete{
+	color:#E4393C;
+}
+.address .iconfont.icon-selected{
+	display: none;
+}
+.address .default-active .iconfont.icon-selected{
+	display: block;
+	position: absolute;
+	right: 6px;
+	bottom: 0;
+	color: #419641;
+	font-size: 20px;
+	font-weight: bold;
+}
+.address li.default-active{
+	border:1px solid #EECCCC;
+}
+.add-address form{
+	padding-top: 28px;
+}
+.add-address form div select{
+	width: 31%;
+	float: left;
+}
+.add-address form div select:not(:first-child){
+	margin-left: 3%;
+}
