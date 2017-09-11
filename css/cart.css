@@ -1,4 +1,6 @@
-
+.cart-checkbox{
+	
+}
 .concent{
 	margin-top: 20px;	
 }
@@ -36,4 +38,13 @@
 }
 .price-line .price-now{
 	color:#E4393C;
+}
+.cart-bottom{
+	background-color: #f3f3f3;
+	border:1px solid #e9e9e9;
+	height: 40px;
+	line-height: 40px;
+}
+.cart-bottom{
+	
 }
