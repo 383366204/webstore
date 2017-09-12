@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录或注册</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/login-register.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-md-4 my-center">
+					<img class="img-responsive" src="img/logo.png" />
+					<ul id="myTab" class="nav nav-tabs">
+						<li class="active">
+							<a href="#login" data-toggle="tab">
+								登录
+							</a>
+						</li>
+						<li class="pull-right">
+							<a href="#register" data-toggle="tab">注册</a>
+						</li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade in active" id="login">
+							<form class="form">
+								<label for="username" class="sr-only">用户名</label>
+								<input type="text" id="username" class="form-control" placeholder="用户名" required autofocus>
+								<label for="inputPassword" class="sr-only">密码</label>
+								<input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+								<div class="checkbox">
+									<label>  
+            					<input type="checkbox" value="remember-me">  
+           						 记住密码
+							</label>
+									<a href="#" class="pull-right">忘记密码？</a>
+								</div>
+								<button class="btn btn-primary btn-block" type="submit">登录</button>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="register">
+							<form class="form">
+								<label for="username" class="sr-only">用户名</label>
+								<input type="text" id="username" class="form-control" placeholder="用户名      4-16位(字母或数字或下划线)" required autofocus pattern="^[a-zA-Z0-9_]{4,16}$">
+								<label for="inputPassword" class="sr-only">密码</label>
+								<input type="password" id="inputPassword" class="form-control" placeholder="密码          8-16位(同时含有数字、字母)" required pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$">
+								<button class="btn btn-primary btn-block" type="submit">注册</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

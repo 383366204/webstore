@@ -508,6 +508,9 @@
 					var newsum = $('#total').text((parseFloat(oldsum)+parseFloat(price)).toFixed(2));
 					var oldcount = $('#check-count').text();
 					var newcount = $('#check-count').text(parseInt(oldcount)+1);
+					if($('.cart-checkbox input').not(':checked').length==0){
+						document.getElementById('check-all').checked = true;
+					}
 				}
 				else{
 					var price = $(this).parent().parent().siblings('.td-sum').find('em').text();
