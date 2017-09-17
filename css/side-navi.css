@@ -1,18 +1,22 @@
 #myCarousel{
-	position: relative;
+	/*position: absolute;
+	top: 137px;*/
+	float: left;
 }
 /*导航*/
 nav{
-	position: absolute;
-	top: 0px;
-	left: 382px;
+	position: relative;
+	z-index: 9;
+	/*top: 0px;
+	left: 382px;*/
 }
-/*.category-content{position: relative;}*/
-.category-content .category{background-color: #2B2B2B;box-shadow: 8px 0 7px -3px rgba(0,0,0,0.3) }
-.category-content .category-list li {width: 195px; height:45px;border-top: 1px solid #333;border-bottom: 1px solid #333;}
+.category-content{padding-left: 0;padding-right: 0;}
+.category-content .category{ background-color: #2B2B2B;box-shadow: 8px 0 7px -3px rgba(0,0,0,0.3) }
+.category-content .category-list li:first-child{border-top: 1px solid #333;}
+.category-content .category-list li:last-child{border-bottom: 1px solid #333;}
 .category-content .category-list a:hover{ text-decoration: none; color: #D2364C; }
 .category-content .category-name .ml-22{font-size:14px;}
-.category-content .category-list .bd-b{ height: 1px;  margin: -1px 10px 0 10px;}
+.category-content .category-list .bd-b{ height: 1px;/*  margin: -1px 10px 0 10px;*/}
 
 
 .category-content .b-category-name {line-height:32px;padding-top:3px ;padding-left:8px ;}
