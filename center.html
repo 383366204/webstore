@@ -393,18 +393,18 @@
 											<span class="iconfont icon-phone"></span>18928651029
 										</div>
 										<div class="text-center">
-												<span class="iconfont icon-map"></span>
-												<span>地址：</span>
-												<span class="province">广东</span>省
-												<span class="city">广州</span>市
-												<span class="dist">海珠</span>区
-												<span class="street">江南大道666号(广州大学)</span>
+											<span class="iconfont icon-map"></span>
+											<span>地址：</span>
+											<span class="province">广东</span>省
+											<span class="city">广州</span>市
+											<span class="dist">海珠</span>区
+											<span class="street">江南大道666号(广州大学)</span>
 										</div>
 										<div class="text-center">
 											<a href="#">
 												<span class="iconfont icon-edit"></span>编辑
 											</a>
-												<span class="new-addr-bar">|</span>
+											<span class="new-addr-bar">|</span>
 											<a href="#">
 												<span class="iconfont icon-delete"></span>删除
 											</a>
@@ -418,18 +418,18 @@
 											<span class="iconfont icon-phone"></span>18928651029
 										</div>
 										<div class="text-center">
-												<span class="iconfont icon-map"></span>
-												<span>地址：</span>
-												<span class="province">广东</span>省
-												<span class="city">广州</span>市
-												<span class="dist">海珠</span>区
-												<span class="street">江南大道666号(广州大学)</span>
+											<span class="iconfont icon-map"></span>
+											<span>地址：</span>
+											<span class="province">广东</span>省
+											<span class="city">广州</span>市
+											<span class="dist">海珠</span>区
+											<span class="street">江南大道666号(广州大学)</span>
 										</div>
 										<div class="text-center">
 											<a href="#">
 												<span class="iconfont icon-edit"></span>编辑
 											</a>
-												<span class="new-addr-bar">|</span>
+											<span class="new-addr-bar">|</span>
 											<a href="#">
 												<span class="iconfont icon-delete"></span>删除
 											</a>
@@ -443,18 +443,18 @@
 											<span class="iconfont icon-phone"></span>18928651029
 										</div>
 										<div class="text-center">
-												<span class="iconfont icon-map"></span>
-												<span>地址：</span>
-												<span class="province">广东</span>省
-												<span class="city">广州</span>市
-												<span class="dist">海珠</span>区
-												<span class="street">江南大道666号(广州大学)</span>
+											<span class="iconfont icon-map"></span>
+											<span>地址：</span>
+											<span class="province">广东</span>省
+											<span class="city">广州</span>市
+											<span class="dist">海珠</span>区
+											<span class="street">江南大道666号(广州大学)</span>
 										</div>
 										<div class="text-center">
 											<a href="#">
 												<span class="iconfont icon-edit"></span>编辑
 											</a>
-												<span class="new-addr-bar">|</span>
+											<span class="new-addr-bar">|</span>
 											<a href="#">
 												<span class="iconfont icon-delete"></span>删除
 											</a>
@@ -462,7 +462,7 @@
 										<span class="iconfont icon-selected"></span>
 									</li>
 								</ul>
-							<!--	<a href="#" class="col-md-2 text-primary">添加新地址+</a>-->
+								<!--	<a href="#" class="col-md-2 text-primary">添加新地址+</a>-->
 								<!--例子-->
 								<div class="col-md-12">
 									<div class="add-address">
@@ -490,20 +490,14 @@
 												<div class="form-group">
 													<label class="col-md-2 control-label">所在地</label>
 													<div class="col-md-8">
-														<select class="form-control">
-															<option value="0" selected>请选择</option>
-															<option value="a">广东省</option>
-															<option value="b">福建省</option>															
+														<select class="form-control" id="select-provinces">
+															<option value="-1" selected>请选择</option>
 														</select>
-														<select class="form-control">
-															<option value="0" selected>请选择</option>
-															<option value="a">广州市</option>
-															<option value="b">佛山市</option>														
+														<select class="form-control" id="select-cities">
+															<option value="-1" selected>请选择</option>
 														</select>
-														<select class="form-control">
-															<option value="0" selected>请选择</option>
-															<option value="a">南海区</option>
-															<option value="b">禅城区</option>															
+														<select class="form-control" id="select-districts">
+															<option value="-1" selected>请选择</option>
 														</select>
 													</div>
 												</div>
@@ -653,9 +647,51 @@
 		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$('.address .default-address').click(function () {
-				$(this).parent().addClass('default-active').siblings('li').removeClass('default-active');
+			$(function () {
+				//省市联动
+				//省	
+				var citiesJson;
+				var districtJson;
+				$.getJSON('./json/provinces.json',function (json) {			
+					$.each(json.provinces, function(key,val) {
+						$('#select-provinces').append('<option value="'+val.id+'">'+val.provinceName +'</option>');
+					});
+					$.getJSON('./json/cities.json',function (json) {
+							citiesJson = json.cities;							
+					});
+					$.getJSON('./json/districts.json',function (json) {
+							districtJson = json.areas;							
+					});
+				});
+				//市				
+				$('#select-provinces').change(function () {
+					$('#select-cities').empty().append('<option value="-1" selected>请选择</option>');
+					$('#select-districts').empty().append('<option value="-1" selected>请选择</option>');
+					var selectedProvince = $(this).val();
+					if (selectedProvince!=-1) {
+						$.each(citiesJson, function(key,val) {
+							if (selectedProvince == val.provinceId) {
+								$('#select-cities').append('<option value="'+val.id+'">'+val.name +'</option>');
+							}
+						});
+					}
+				})
+				//区
+				$('#select-cities').change(function () {
+					$('#select-districts').empty().append('<option value="-1" selected>请选择</option>');
+					var selectedCity = $(this).val();
+					if (selectedCity!=-1) {
+						$.each(districtJson, function(key,val) {
+							if (selectedCity == val.cityId) {
+								$('#select-districts').append('<option value="'+val.id+'">'+val.areaName +'</option>');
+							}
+						});
+					}
+				})
 			})
+			$('.address .default-address').click(function() {
+				$(this).parent().addClass('default-active').siblings('li').removeClass('default-active');
+			});
 		</script>
 	</body>
 

@@ -46,16 +46,21 @@
 .express select{
 	width: 30%;
 	float: left;
+	text-align: center;
 }
 .express select:not(:first-child){
 	margin-left: 3%;
 }
 .express>div>div:nth-child(2){
 	padding-left: 0;
+	padding-right: 0;
 }
 .express>div>div{
 	height: 100%;
 	line-height: 34px;
+}
+.express>div>div:last-child{
+	padding-left: 0;
 }
 .count{
 	padding-top: 10px;

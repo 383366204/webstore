@@ -123,21 +123,15 @@
 				<div class="col-md-8 express">
 					<div class="form-group">
 						<label class="col-md-2 control-label">配送至</label>
-						<div class="col-md-6">
-							<select class="form-control">
-								<option value="0" selected>请选择</option>
-								<option value="a">广东省</option>
-								<option value="b">福建省</option>
+						<div class="col-md-8">
+							<select class="form-control" id="select-provinces">
+								<option value="-1" selected>请选择</option>
 							</select>
-							<select class="form-control">
-								<option value="0" selected>请选择</option>
-								<option value="a">广州市</option>
-								<option value="b">佛山市</option>
+							<select class="form-control" id="select-cities">
+								<option value="-1" selected>请选择</option>
 							</select>
-							<select class="form-control">
-								<option value="0" selected>请选择</option>
-								<option value="a">南海区</option>
-								<option value="b">禅城区</option>
+							<select class="form-control" id="select-districts">
+								<option value="-1" selected>请选择</option>
 							</select>
 						</div>
 						<div class="col-md-2">
@@ -1159,7 +1153,48 @@
 				$('.productImg>img:not(:first-child)').click(function() {
 					var order = $(this).index();
 					$(this).parent().children('img:first-child').attr('src', 'img/0' + order + '_mid.jpg');
+				});
+				//省市联动
+				//省	
+				var citiesJson;
+				var districtJson;
+				$.getJSON('./json/provinces.json',function (json) {			
+					$.each(json.provinces, function(key,val) {
+						$('#select-provinces').append('<option value="'+val.id+'">'+val.provinceName +'</option>');
+					});
+					$.getJSON('./json/cities.json',function (json) {
+							citiesJson = json.cities;							
+					});
+					$.getJSON('./json/districts.json',function (json) {
+							districtJson = json.areas;							
+					});
+				});
+				//市				
+				$('#select-provinces').change(function () {
+					$('#select-cities').empty().append('<option value="-1" selected>请选择</option>');
+					$('#select-districts').empty().append('<option value="-1" selected>请选择</option>');
+					var selectedProvince = $(this).val();
+					if (selectedProvince!=-1) {
+						$.each(citiesJson, function(key,val) {
+							if (selectedProvince == val.provinceId) {
+								$('#select-cities').append('<option value="'+val.id+'">'+val.name +'</option>');
+							}
+						});
+					}
 				})
+				//区
+				$('#select-cities').change(function () {
+					$('#select-districts').empty().append('<option value="-1" selected>请选择</option>');
+					var selectedCity = $(this).val();
+					if (selectedCity!=-1) {
+						$.each(districtJson, function(key,val) {
+							if (selectedCity == val.cityId) {
+								$('#select-districts').append('<option value="'+val.id+'">'+val.areaName +'</option>');
+							}
+						});
+					}
+				})
+				
 			})
 		</script>
 	</body>
