@@ -1,15 +1,41 @@
-.my-center{  
-    float: none;  
-    display: block;  
-    margin-left: auto;  
-    margin-right: auto;  
+.headerline{
+	border-bottom: 2px solid #D2364C;
+	height: 2px;
+}
+.logo{
+	margin: 20px 0;
+}
+.logo div{
+	margin-top: 25px;
+	font-size: 12px;
+	color:#6C6C6C;
+	text-align: center;
+ 	border: solid 1px #FFB4A8;
+	padding: 5px 0;
+	background-color: #FEF2F2;
+}
+.main{
+	background-image:url(../img/bg.jpg);
+	/*background-position: ;*/
+	background-position-x: -200px;
+}
+.login{
+	height:650px;
+	margin: 0 auto;
+	
+}
+.my-form{
+	margin-top: 180px;
+	padding: 26px 50px 46px 50px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 } 
 .form-control{
 	margin-top: 14px;
 }
-.my-center img{
-	margin: 30px 0;
-}
 #register>form>button{
 	margin-top: 14px;
+}
+.footerline{
+	margin-top: 20px;
 }
