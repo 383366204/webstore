@@ -23,8 +23,8 @@
 .birth-select2 select{float:left; width:40px;background: none;border: none;padding-top:9px ;}
 
 
-.user-info{width:100%; max-width:900px;overflow:hidden;padding-bottom: 2px;}
-.user-safety{width:100%; max-width:900px;overflow:hidden;}
+.user-info{width:100%;overflow:hidden;padding-bottom: 2px;}
+.user-safety{width:100%;overflow:hidden;}
 
 /*安全设置*/
 .check a{text-decoration: none;}
@@ -93,4 +93,60 @@
 }
 .add-address form div select:not(:first-child){
 	margin-left: 3%;
+}
+/*订单管理*/
+#center-order .center-content{
+	margin-top: 16px;
+}
+.order-info-title{
+	margin-top: 10px;
+	border: 1px solid #EEE;
+	padding: 10px 0;
+}
+.order-info-title li{
+	/*float: left;*/
+}
+.order-info-content{
+	margin-top: 10px;
+}
+/*订单编号和成交时间*/
+.order-info-content-NoAndTime{
+	padding: 6px 0;
+}
+.order-info-content-product-list{
+	border:1px solid #EEE;
+	position: relative;
+}
+.order-info-content-product-list .media{	
+	margin: 12px 0px 12px 10px;
+}
+.order-info-content-product-list .media-heading p{
+	margin-top: 6px;
+}
+.order-info-content-product-list .product-product-operation{
+	padding-right: 30px;
+}
+.product-sum-status-operation{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -40px;
+}
+.product-sum-status-operation div{
+	display: inline-block;
+}
+.product-sum-status-operation .operation{
+	line-height: 80px;
+}
+.product-sum-status-operation .operation a{
+	background-color: #d7342e;
+	color: #FFFFFF;
+	padding: 6px 10px;
+}
+#center-service .center-content{
+	margin-top: 16px;
+}
+#center-service .product-sum-status-operation{
+	position: static;
+	margin: initial;
 }

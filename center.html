@@ -95,7 +95,7 @@
 								<li class="list-title">
 									个人资料
 								</li>
-								<li class="active">
+								<li>
 									<a href="#center-info" data-toggle="tab">个人信息</a>
 								</li>
 								<li>
@@ -110,8 +110,8 @@
 								<li>
 									<a href="#center-order" data-toggle="tab">订单管理</a>
 								</li>
-								<li>
-									<a href="change.html" data-toggle="tab">退款售后</a>
+								<li class="active">
+									<a href="#center-service" data-toggle="tab">退款售后</a>
 								</li>
 								<li class="list-title">
 									我的资产
@@ -140,64 +140,14 @@
 								<li>
 									<a href="news.html" data-toggle="tab">消息</a>
 								</li>
-							</ul>							
-						</li>
-						<!--<li class="person">
-							<ul>
-								<li>
-									我的交易
-								</li>
-								<li>
-									<a href="#center-order" data-toggle="tab">订单管理</a>
-								</li>
-								<li>
-									<a href="change.html" data-toggle="tab">退款售后</a>
-								</li>
-							</ul>
-						</li>-->
-						<!--<li class="person">
-							<ul>
-								<li>
-									我的资产
-								</li>
-								<li>
-									<a href="coupon.html" data-toggle="tab">优惠券 </a>
-								</li>
-								<li>
-									<a href="bonus.html" data-toggle="tab">红包</a>
-								</li>
-								<li>
-									<a href="bill.html" data-toggle="tab">账单明细</a>
-								</li>
 							</ul>
 						</li>
-
-						<li class="person">
-							<ul>
-								<li>
-									我的小窝
-								</li>
-								<li>
-									<a href="collection.html" data-toggle="tab">收藏</a>
-								</li>
-								<li>
-									<a href="foot.html" data-toggle="tab">足迹</a>
-								</li>
-								<li>
-									<a href="comment.html" data-toggle="tab">评价</a>
-								</li>
-								<li>
-									<a href="news.html" data-toggle="tab">消息</a>
-								</li>
-							</ul>
-						</li>-->
-
 					</ul>
 
 				</aside>
 				<div class="col-md-10">
 					<div id="centerTabContent" class="tab-content">
-						<div class="tab-pane fade in active" id="center-info">
+						<div class="tab-pane fade" id="center-info">
 							<div class="user-info">
 								<!--标题 -->
 								<div class="center-title">
@@ -563,122 +513,1174 @@
 							<div class="user-info">
 								<!--标题 -->
 								<div class="center-title">
-									<div><b>安全设置</b> / <small>Safety</small></div>
+									<div><b>订单管理</b> / <small>Order</small></div>
 								</div>
-
-								<!--头像 -->
-								<div class="col-md-12 user-infoPic">
-									<div class="filePic col-md-3">
-										<input type="file" class="inputPic" allowexts="gif,jpeg,jpg,png,bmp" accept="image/*">
-										<img class="img-circle" src="img/getAvatar.do.jpg" alt="请上传头像" />
-										<h5>点击上传头像</h5>
-									</div>
-
-									<div class="info-m col-md-9">
-										<div><b>用户名：<i>孙先生</i></b></div>
-										<div>
-											<span class="rank r2">
-							           	 		<a href="#">铜牌会员</a>
-						          	 		</span>
-										</div>
-										<div>
-											<a href="safety.html">
-												账户安全
-												<span>60分</span><span class="iconfont icon-warning" style="color: #CC3333;"></span>
-											</a>
-										</div>
-									</div>
-								</div>
-
 								<!--设置信息 -->
-								<div class="col-md-12">
-									<div class="check">
-										<ul class="col-md-12">
-											<li class="col-md-12">
-												<div class="col-md-1">
-													<span class="iconfont icon-lock"></span>
+								<div class="col-md-12 center-content">
+									<ul id="orderTab" class="nav nav-pills nav-justified">
+										<li class="active">
+											<a href="#all-order" data-toggle="tab">所有订单</a>
+										</li>
+										<li>
+											<a href="#not-pay" data-toggle="tab">待付款</a>
+										</li>
+										<li>
+											<a href="#not-send" data-toggle="tab">待发货</a>
+										</li>
+										<li>
+											<a href="#not-receive" data-toggle="tab">待收货</a>
+										</li>
+										<li>
+											<a href="#not-judge" data-toggle="tab">待评价</a>
+										</li>
+									</ul>
+									<div id="orderTabContent" class="tab-content">
+										<div class="tab-pane fade in active" id="all-order">
+											<ul class="list-inline col-md-12 text-center order-info-title">
+												<li class="list-group-item-text order-info-name col-md-4 col-xs-4">
+													商品
+												</li>
+												<li class="list-group-item-text order-info-price col-md-1 col-xs-1">
+													单价
+												</li>
+												<li class="list-group-item-text order-info-num col-md-1 col-xs-1">
+													数量
+												</li>
+												<li class="list-group-item-text order-info-product-operation col-md-2 col-xs-2">
+													商品操作
+												</li>
+												<li class="list-group-item-text order-info-sum col-md-1 col-xs-1">
+													合计
+												</li>
+												<li class="list-group-item-text order-info-status col-md-2 col-xs-2">
+													交易状态
+												</li>
+												<li class="list-group-item-text order-info-trans-operation col-md-1 col-xs-1">
+													交易操作
+												</li>
+											</ul>
+											<div class="row order-info-content">
+												<div class="col-md-12 order-info-content-NoAndTime">
+													<div class="col-md-2">
+														订单编号:<span>1601430</span>
+													</div>
+													<div class="col-md-4">
+														成交时间:<span>2015-12-20</span>
+													</div>
 												</div>
-												<div class="m-left col-md-8">
-													<h4>登录密码</h4>
-													<div class="fore2"><small>为保证您购物安全，建议您定期更改密码以保护账户安全。</small></div>
+												<ul class="col-md-12 media-list order-info-content-product-list">
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<div class="product-sum-status-operation">
+														<div class="sum col-md-4 text-center">
+															<p>
+																合计：¥<span>676.00</span>
+															</p>
+															<p class="text-muted">
+																含运费：¥<span>10.00</span>
+															</p>
+														</div>
+														<div class="status col-md-4 text-right">
+															<p>交易成功</p>
+															<p>
+																<a href="#">订单详情</a>
+															</p>
+															<p>
+																<a href="#">查看物流</a>
+															</p>
+														</div>
+														<div class="operation col-md-4 text-right">
+															<a href="#">删除订单</a>
+														</div>
+													</div>
+												</ul>
+											</div>
+											<div class="row order-info-content">
+												<div class="col-md-12 order-info-content-NoAndTime">
+													<div class="col-md-2">
+														订单编号:<span>1601430</span>
+													</div>
+													<div class="col-md-4">
+														成交时间:<span>2015-12-20</span>
+													</div>
 												</div>
-												<div class="fore3 col-md-2">
-													<a href="password.html">
-														<div class="safe-modify">修改</div>
-													</a>
+												<ul class="col-md-12 media-list order-info-content-product-list">
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<div class="product-sum-status-operation">
+														<div class="sum col-md-4 text-center">
+															<p>
+																合计：¥<span>676.00</span>
+															</p>
+															<p class="text-muted">
+																含运费：¥<span>10.00</span>
+															</p>
+														</div>
+														<div class="status col-md-4 text-right">
+															<p>交易关闭</p>
+															<p>
+																<a href="#">订单详情</a>
+															</p>
+															<p>
+																<a href="#">查看物流</a>
+															</p>
+														</div>
+														<div class="operation col-md-4 text-right">
+															<a href="#">删除订单</a>
+														</div>
+													</div>
+												</ul>
+											</div>
+											<div class="row order-info-content">
+												<div class="col-md-12 order-info-content-NoAndTime">
+													<div class="col-md-2">
+														订单编号:<span>1601430</span>
+													</div>
+													<div class="col-md-4">
+														成交时间:<span>2015-12-20</span>
+													</div>
 												</div>
-											</li>
-											<li class="col-md-12">
-												<div class="col-md-1">
-													<span class="iconfont icon-card"></span>
+												<ul class="col-md-12 media-list order-info-content-product-list">
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<div class="product-sum-status-operation">
+														<div class="sum col-md-4 text-center">
+															<p>
+																合计：¥<span>676.00</span>
+															</p>
+															<p class="text-muted">
+																含运费：¥<span>10.00</span>
+															</p>
+														</div>
+														<div class="status col-md-4 text-right">
+															<p>尚未发货</p>
+															<p>
+																<a href="#">订单详情</a>
+															</p>
+															<p>
+																<a href="#">查看物流</a>
+															</p>
+														</div>
+														<div class="operation col-md-4 text-right">
+															<a href="#">提醒发货</a>
+														</div>
+													</div>
+												</ul>
+											</div>
+											<div class="row order-info-content">
+												<div class="col-md-12 order-info-content-NoAndTime">
+													<div class="col-md-2">
+														订单编号:<span>1601430</span>
+													</div>
+													<div class="col-md-4">
+														成交时间:<span>2015-12-20</span>
+													</div>
 												</div>
-												<div class="m-left col-md-8">
-													<h4>支付密码</h4>
-													<div class="fore2"><small>启用支付密码功能，为您资产账户安全加把锁。</small></div>
+												<ul class="col-md-12 media-list order-info-content-product-list">
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<div class="product-sum-status-operation">
+														<div class="sum col-md-4 text-center">
+															<p>
+																合计：¥<span>676.00</span>
+															</p>
+															<p class="text-muted">
+																含运费：¥<span>10.00</span>
+															</p>
+														</div>
+														<div class="status col-md-4 text-right">
+															<p>您已付款</p>
+															<p>
+																<a href="#">订单详情</a>
+															</p>
+															<p>
+																<a href="#">查看物流</a>
+															</p>
+														</div>
+														<div class="operation col-md-4 text-right">
+															<a href="#">确认收货</a>
+														</div>
+													</div>
+												</ul>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="not-pay">
+											<ul class="list-inline col-md-12 text-center order-info-title">
+												<li class="list-group-item-text order-info-name col-md-4">
+													商品
+												</li>
+												<li class="list-group-item-text order-info-price col-md-1">
+													单价
+												</li>
+												<li class="list-group-item-text order-info-num col-md-1">
+													数量
+												</li>
+												<li class="list-group-item-text order-info-product-operation col-md-2">
+													商品操作
+												</li>
+												<li class="list-group-item-text order-info-sum col-md-1">
+													合计
+												</li>
+												<li class="list-group-item-text order-info-status col-md-2">
+													交易状态
+												</li>
+												<li class="list-group-item-text order-info-trans-operation col-md-1">
+													交易操作
+												</li>
+											</ul>
+											<div class="row order-info-content">
+												<div class="col-md-12 order-info-content-NoAndTime">
+													<div class="col-md-2">
+														订单编号:<span>1601430</span>
+													</div>
+													<div class="col-md-4">
+														成交时间:<span>2015-12-20</span>
+													</div>
 												</div>
-												<div class="fore3 col-md-2">
-													<a href="setpay.html">
-														<div class="safe-modify">立即启用</div>
-													</a>
+												<ul class="col-md-12 media-list order-info-content-product-list">
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<div class="product-sum-status-operation">
+														<div class="sum col-md-4 text-center">
+															<p>
+																合计：¥<span>676.00</span>
+															</p>
+															<p class="text-muted">
+																含运费：¥<span>10.00</span>
+															</p>
+														</div>
+														<div class="status col-md-4 text-right">
+															<p>交易关闭</p>
+															<p>
+																<a href="#">订单详情</a>
+															</p>
+															<p>
+																<a href="#">查看物流</a>
+															</p>
+														</div>
+														<div class="operation col-md-4 text-right">
+															<a href="#">删除订单</a>
+														</div>
+													</div>
+												</ul>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="not-send">
+											<ul class="list-inline col-md-12 text-center order-info-title">
+												<li class="list-group-item-text order-info-name col-md-4">
+													商品
+												</li>
+												<li class="list-group-item-text order-info-price col-md-1">
+													单价
+												</li>
+												<li class="list-group-item-text order-info-num col-md-1">
+													数量
+												</li>
+												<li class="list-group-item-text order-info-product-operation col-md-2">
+													商品操作
+												</li>
+												<li class="list-group-item-text order-info-sum col-md-1">
+													合计
+												</li>
+												<li class="list-group-item-text order-info-status col-md-2">
+													交易状态
+												</li>
+												<li class="list-group-item-text order-info-trans-operation col-md-1">
+													交易操作
+												</li>
+
+											</ul>
+											<div class="row order-info-content">
+												<div class="col-md-12 order-info-content-NoAndTime">
+													<div class="col-md-2">
+														订单编号:<span>1601430</span>
+													</div>
+													<div class="col-md-4">
+														成交时间:<span>2015-12-20</span>
+													</div>
 												</div>
-											</li>
-											<li class="col-md-12">
-												<div class="col-md-1">
-													<span class="iconfont icon-phone"></span>
+												<ul class="col-md-12 media-list order-info-content-product-list">
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<div class="product-sum-status-operation">
+														<div class="sum col-md-4 text-center">
+															<p>
+																合计：¥<span>676.00</span>
+															</p>
+															<p class="text-muted">
+																含运费：¥<span>10.00</span>
+															</p>
+														</div>
+														<div class="status col-md-4 text-right">
+															<p>尚未发货</p>
+															<p>
+																<a href="#">订单详情</a>
+															</p>
+															<p>
+																<a href="#">查看物流</a>
+															</p>
+														</div>
+														<div class="operation col-md-4 text-right">
+															<a href="#">提醒发货</a>
+														</div>
+													</div>
+												</ul>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="not-receive">
+											<ul class="list-inline col-md-12 text-center order-info-title">
+												<li class="list-group-item-text order-info-name col-md-4">
+													商品
+												</li>
+												<li class="list-group-item-text order-info-price col-md-1">
+													单价
+												</li>
+												<li class="list-group-item-text order-info-num col-md-1">
+													数量
+												</li>
+												<li class="list-group-item-text order-info-product-operation col-md-2">
+													商品操作
+												</li>
+												<li class="list-group-item-text order-info-sum col-md-1">
+													合计
+												</li>
+												<li class="list-group-item-text order-info-status col-md-2">
+													交易状态
+												</li>
+												<li class="list-group-item-text order-info-trans-operation col-md-1">
+													交易操作
+												</li>
+											</ul>
+											<div class="row order-info-content">
+												<div class="col-md-12 order-info-content-NoAndTime">
+													<div class="col-md-2">
+														订单编号:<span>1601430</span>
+													</div>
+													<div class="col-md-4">
+														成交时间:<span>2015-12-20</span>
+													</div>
 												</div>
-												<div class="m-left col-md-8">
-													<h4>手机验证</h4>
-													<div class="fore2"><small>您验证的手机：186XXXXXXXX 若已丢失或停用，请立即更换</small></div>
+												<ul class="col-md-12 media-list order-info-content-product-list">
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<div class="product-sum-status-operation">
+														<div class="sum col-md-4 text-center">
+															<p>
+																合计：¥<span>676.00</span>
+															</p>
+															<p class="text-muted">
+																含运费：¥<span>10.00</span>
+															</p>
+														</div>
+														<div class="status col-md-4 text-right">
+															<p>您已付款</p>
+															<p>
+																<a href="#">订单详情</a>
+															</p>
+															<p>
+																<a href="#">查看物流</a>
+															</p>
+														</div>
+														<div class="operation col-md-4 text-right">
+															<a href="#">确认收货</a>
+														</div>
+													</div>
+												</ul>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="not-judge">
+											<ul class="list-inline col-md-12 text-center order-info-title">
+												<li class="list-group-item-text order-info-name col-md-4">
+													商品
+												</li>
+												<li class="list-group-item-text order-info-price col-md-1">
+													单价
+												</li>
+												<li class="list-group-item-text order-info-num col-md-1">
+													数量
+												</li>
+												<li class="list-group-item-text order-info-product-operation col-md-2">
+													商品操作
+												</li>
+												<li class="list-group-item-text order-info-sum col-md-1">
+													合计
+												</li>
+												<li class="list-group-item-text order-info-status col-md-2">
+													交易状态
+												</li>
+												<li class="list-group-item-text order-info-trans-operation col-md-1">
+													交易操作
+												</li>
+											</ul>
+											<div class="row order-info-content">
+												<div class="col-md-12 order-info-content-NoAndTime">
+													<div class="col-md-2">
+														订单编号:<span>1601430</span>
+													</div>
+													<div class="col-md-4">
+														成交时间:<span>2015-12-20</span>
+													</div>
 												</div>
-												<div class="fore3 col-md-2">
-													<a href="bindphone.html">
-														<div class="safe-modify">换绑</div>
-													</a>
+												<ul class="col-md-12 media-list order-info-content-product-list">
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-1 col-xs-1 product-price center-vertical">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-1 col-xs-1 product-num text-right">
+																<span>2</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">退款</a>
+															</div>
+														</div>
+													</li>
+													<div class="product-sum-status-operation">
+														<div class="sum col-md-4 text-center">
+															<p>
+																合计：¥<span>676.00</span>
+															</p>
+															<p class="text-muted">
+																含运费：¥<span>10.00</span>
+															</p>
+														</div>
+														<div class="status col-md-4 text-right">
+															<p>您已付款</p>
+															<p>
+																<a href="#">订单详情</a>
+															</p>
+															<p>
+																<a href="#">查看物流</a>
+															</p>
+														</div>
+														<div class="operation col-md-4 text-right">
+															<a href="#">确认收货</a>
+														</div>
+													</div>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="tab-pane fade in active" id="center-service">
+							<div class="user-info">
+								<!--标题 -->
+								<div class="center-title">
+									<div><b>退款售后</b> / <small>Refund</small></div>
+								</div>
+								<!--设置信息 -->
+								<div class="col-md-12 center-content">
+									<ul id="serviceTab" class="nav nav-pills nav-justified">
+										<li class="active">
+											<a href="#service-manage" data-toggle="tab">退款管理</a>
+										</li>
+										<li>
+											<a href="#refund-manage" data-toggle="tab">售后管理</a>
+										</li>
+									</ul>
+									<div id="serviceTabContent" class="tab-content">
+										<div class="tab-pane fade in active" id="service-manage">
+											<ul class="list-inline col-md-12 text-center order-info-title">
+												<li class="list-group-item-text order-info-name col-md-4">
+													商品
+												</li>
+												<li class="list-group-item-text order-info-trans-price col-md-2">
+													交易金额
+												</li>
+												<li class="list-group-item-text order-info-refund-price col-md-2">
+													退款金额
+												</li>
+												<li class="list-group-item-text order-info-status col-md-2">
+													交易状态
+												</li>
+												<li class="list-group-item-text order-info-trans-operation col-md-2">
+													交易操作
+												</li>
+											</ul>
+											<div class="row order-info-content">
+												<div class="col-md-12 order-info-content-NoAndTime">
+													<div class="col-md-2">
+														订单编号:<span>1601430</span>
+													</div>
+													<div class="col-md-4">
+														成交时间:<span>2015-12-20</span>
+													</div>
 												</div>
-											</li>
-											<li class="col-md-12">
-												<div class="col-md-1">
-													<span class="iconfont icon-email"></span>
+												<ul class="col-md-12 media-list order-info-content-product-list">
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-2 col-xs-1 product-price text-right">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">290.00</a>
+															</div>
+															<div class="product-sum-status-operation col-md-5">
+																<div class="sum col-md-6 text-center">
+																	<p class="text-danger">
+																		退款成功
+																	</p>
+																</div>
+																<div class="operation col-md-6 text-right">
+																	<a href="#">钱款去向</a>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="refund-manage">
+											<ul class="list-inline col-md-12 text-center order-info-title">
+												<li class="list-group-item-text order-info-name col-md-4">
+													商品
+												</li>
+												<li class="list-group-item-text order-info-trans-price col-md-2">
+													交易金额
+												</li>
+												<li class="list-group-item-text order-info-refund-price col-md-2">
+													退款金额
+												</li>
+												<li class="list-group-item-text order-info-status col-md-2">
+													交易状态
+												</li>
+												<li class="list-group-item-text order-info-trans-operation col-md-2">
+													交易操作
+												</li>
+											</ul>
+											<div class="row refund-info-content">
+												<div class="col-md-12 order-info-content-NoAndTime">
+													<div class="col-md-2">
+														订单编号:<span>1601430</span>
+													</div>
+													<div class="col-md-4">
+														成交时间:<span>2015-12-20</span>
+													</div>
 												</div>
-												<div class="m-left col-md-8">
-													<h4>邮箱验证</h4>
-													<div class="fore2"><small>您验证的邮箱：5831XXX@qq.com 可用于快速找回登录密码</small></div>
-												</div>
-												<div class="fore3 col-md-2">
-													<a href="email.html">
-														<div class="safe-modify">换绑</div>
-													</a>
-												</div>
-											</li>
-											<li class="col-md-12">
-												<div class="col-md-1">
-													<span class="iconfont icon-Id"></span>
-												</div>
-												<div class="m-left col-md-8">
-													<h4>实名认证</h4>
-													<div class="fore2"><small>用于提升账号的安全性和信任级别，认证后不能修改认证信息。</small></div>
-												</div>
-												<div class="fore3 col-md-2">
-													<a href="idcard.html">
-														<div class="safe-modify">认证</div>
-													</a>
-												</div>
-											</li>
-											<li class="col-md-12">
-												<div class="col-md-1">
-													<span class="iconfont icon-shield"></span>
-												</div>
-												<div class="m-left col-md-8">
-													<h4>安全问题</h4>
-													<div class="fore2"><small>保护账户安全，验证您身份的工具之一。</small></div>
-												</div>
-												<div class="fore3 col-md-2">
-													<a href="question.html">
-														<div class="safe-modify">认证</div>
-													</a>
-												</div>
-											</li>
-										</ul>
+												<ul class="col-md-12 media-list order-info-content-product-list">
+													<li class="media">
+														<div class="media-left">
+															<a href="#">
+																<img class="media-object img-thumbnail" src="img/kouhong.jpg_80x80.jpg">
+															</a>
+														</div>
+														<div class="media-body">
+															<h5 class="media-heading col-xs-3 col-md-3">
+																美康粉黛醉美唇膏 持久保湿滋润防水不掉色
+																<p class="text-muted">
+																	颜色:<span>12#川南玛瑙</span><br />
+																	包装:<span>裸装</span>
+																</p>
+															</h5>
+															<div class="col-md-2 col-xs-1 product-price text-right">
+																<span>300.00</span>
+															</div>
+															<div class="col-md-2 text-right col-xs-2 product-product-operation">
+																<a href="#">290.00</a>
+															</div>
+															<div class="product-sum-status-operation col-md-5">
+																<div class="sum col-md-6 text-center">
+																	<p class="text-danger">
+																		退款成功
+																	</p>
+																</div>
+																<div class="operation col-md-6 text-right">
+																	<a href="#">钱款去向</a>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
 									</div>
 								</div>
 
@@ -808,43 +1810,43 @@
 		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(function () {
+			$(function() {
 				//省市联动
 				//省	
 				var citiesJson;
 				var districtJson;
-				$.getJSON('./json/provinces.json',function (json) {			
-					$.each(json.provinces, function(key,val) {
-						$('#select-provinces').append('<option value="'+val.id+'">'+val.provinceName +'</option>');
+				$.getJSON('./json/provinces.json', function(json) {
+					$.each(json.provinces, function(key, val) {
+						$('#select-provinces').append('<option value="' + val.id + '">' + val.provinceName + '</option>');
 					});
-					$.getJSON('./json/cities.json',function (json) {
-							citiesJson = json.cities;							
+					$.getJSON('./json/cities.json', function(json) {
+						citiesJson = json.cities;
 					});
-					$.getJSON('./json/districts.json',function (json) {
-							districtJson = json.areas;							
+					$.getJSON('./json/districts.json', function(json) {
+						districtJson = json.areas;
 					});
 				});
 				//市				
-				$('#select-provinces').change(function () {
+				$('#select-provinces').change(function() {
 					$('#select-cities').empty().append('<option value="-1" selected>请选择</option>');
 					$('#select-districts').empty().append('<option value="-1" selected>请选择</option>');
 					var selectedProvince = $(this).val();
-					if (selectedProvince!=-1) {
-						$.each(citiesJson, function(key,val) {
-							if (selectedProvince == val.provinceId) {
-								$('#select-cities').append('<option value="'+val.id+'">'+val.name +'</option>');
+					if(selectedProvince != -1) {
+						$.each(citiesJson, function(key, val) {
+							if(selectedProvince == val.provinceId) {
+								$('#select-cities').append('<option value="' + val.id + '">' + val.name + '</option>');
 							}
 						});
 					}
 				})
 				//区
-				$('#select-cities').change(function () {
+				$('#select-cities').change(function() {
 					$('#select-districts').empty().append('<option value="-1" selected>请选择</option>');
 					var selectedCity = $(this).val();
-					if (selectedCity!=-1) {
-						$.each(districtJson, function(key,val) {
-							if (selectedCity == val.cityId) {
-								$('#select-districts').append('<option value="'+val.id+'">'+val.areaName +'</option>');
+					if(selectedCity != -1) {
+						$.each(districtJson, function(key, val) {
+							if(selectedCity == val.cityId) {
+								$('#select-districts').append('<option value="' + val.id + '">' + val.areaName + '</option>');
 							}
 						});
 					}
