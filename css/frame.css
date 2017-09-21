@@ -1,40 +1,56 @@
 body{
 	background-color: #f8f8f8;
 }
-.center{
-	
-}
+/*左边导航栏的样式*/
 aside>ul{
-	margin-top: 23px;	border-top:4px solid #FEC4D7;
+	margin-top: 23px;
+	border-top:4px solid #FEC4D7;
 	background-color: #FFFFFF;
 }
-li.person{
+aside>ul>li>ul>li.active>a{
+	color:#E4393C !important;
+}
+aside>ul>li>ul>li.active>a:focus{
+	text-decoration: none;
+}
+/*左面导航栏的内容*/
+li.person-list{
 	padding: 10px 10px;
 }
-li.person:first-child{
+li.person-list:first-child{
 	font-size: 15px;
 }
-li.person:not(:first-child){
+/*左面导航栏的border-top（除了最后一个）*/
+li.person-list:not(:first-child){
 	border-top: 1px solid #F5F8FA;
 }
-
-li.person>ul>li:first-child{
+/*左面导航栏的小标题*/
+li.person-list>ul>li.list-title{
 	font-weight: bold;
 }
-li.person>ul>li:not(:first-child)>a{
+li.person-list>ul>li.list-title:not(:first-child){
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #F5F8FA;
+}
+/*左面导航栏选项*/
+li.person-list>ul>li>a{
 	color: #666;
 }
-li.person>ul>li{
+li.person-list>ul>li{
 	padding: 5px 0px;
 }
+/*右面内容的样式*/
 #centerTabContent{
 	margin-top: 23px;
 	background-color: #FFFFFF;
 }
+/*右面标题样式*/
 .center-title{
 	padding: 20px 0 16px 15px;
 	border-bottom: 1px solid #EEE;
 }
+/*用户名加粗*/
 .center-title>div>b{
 	font-size: 20px;
 }
